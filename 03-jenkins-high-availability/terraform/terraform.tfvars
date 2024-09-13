@@ -1,0 +1,5 @@
+aws_region           = "ap-south-1"
+vpc_cidr             = "10.10.0.0/16"
+project_name         = "jenkins-ha"
+ami_name             = "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20240701"
+asg_lt_instance_type = "t2.medium"

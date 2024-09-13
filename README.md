@@ -28,7 +28,7 @@
 
 ### Technologies Used:
 
-> AWS, Terraform, Jenkins, Docker, Git, SonarQube, OWASP, Trivy, Linux, Bash, Python, HTML, CSS, JavaScript
+> HTML, CSS, JavaScript/NodeJS, Linux, Bash, Python, Git, AWS, Terraform, Jenkins, Docker, SonarQube, OWASP, Trivy
 
 
 
