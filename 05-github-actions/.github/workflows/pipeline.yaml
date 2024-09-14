@@ -1,0 +1,15 @@
+name: Sample Python Unit Testing
+
+on: [push]
+
+jobs:
+  unit-testing:
+    name: Unit Testing
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code Checkout
+        uses: actions/checkout@v4
+      - name: Install Packages
+        run: pip install -r requirements.txt
+      - name: Run Unit Tests
+        run: pytest
