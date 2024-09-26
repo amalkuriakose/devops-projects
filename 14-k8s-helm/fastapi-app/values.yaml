@@ -1,0 +1,14 @@
+service:
+  protocol: TCP
+  port: 80
+  targetPort: 8000
+
+deployment:
+  replicas: 4
+  image: amalkuriakose/fastapi
+  containerPort: 8000
+  imagePullSecrets: docker-hub-creds
+
+labels:
+  app: fastapi
+  tier: api
