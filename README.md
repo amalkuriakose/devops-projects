@@ -28,7 +28,7 @@
 
 ### Technologies Used:
 
-> HTML, CSS, JavaScript/NodeJS, Linux, Bash, Python, FastAPI, Git, AWS, Terraform, Jenkins, SonarQube, OWASP, Trivy, Github Actions, Docker, Kubernetes, Helm, ArgoCD
+> HTML, CSS, JavaScript/NodeJS, Linux, Bash, Python, FastAPI, Git, AWS, Terraform, Jenkins, SonarQube, OWASP, Trivy, Github Actions, Docker, Kubernetes, Helm, ArgoCD, Argo Rollouts
 
 
 
