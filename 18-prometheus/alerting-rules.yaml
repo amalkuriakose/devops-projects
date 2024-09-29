@@ -1,0 +1,12 @@
+groups:
+  - name: fastapi-app-rules
+    rules:
+      - alert: AppDown
+        expr: up{service='fastapi-app-service'} == 0
+        labels:
+          severity: critical
+          team: devops
+        for: 5s
+        annotations:
+          summary: "App is down"
+          description: "App is unreachable"

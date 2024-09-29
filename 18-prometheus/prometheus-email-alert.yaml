@@ -1,0 +1,24 @@
+ global: {}
+    receivers:
+    - name: default-receiver
+    - name: send-email
+      email_configs:
+      - to: amalkuriakose802@gmail.com
+        from: amalkuriakose802@gmail.com
+        smarthost: smtp.gmail.com:465
+        auth_username: amalkuriakose802@gmail.com
+        auth_password: password
+        text: "App Down"
+    route:
+      group_interval: 5m
+      group_wait: 10s
+      receiver: default-receiver
+      repeat_interval: 3h
+      routes:
+        - matchers:
+            - team="devops"
+            - severity="critical"
+          receiver: send-email
+          continue: true
+    templates:
+    - /etc/alertmanager/*.tmpl
