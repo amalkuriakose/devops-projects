@@ -3,11 +3,11 @@
     - name: default-receiver
     - name: send-email
       email_configs:
-      - to: amalkuriakose802@gmail.com
-        from: amalkuriakose802@gmail.com
-        smarthost: smtp.gmail.com:465
-        auth_username: amalkuriakose802@gmail.com
-        auth_password: password
+      - to: test@mail.com
+        from: test@mail.com
+        smarthost: smtp.mail.com:465
+        auth_username: test@mail.com
+        auth_password: test-password
         text: "App Down"
     route:
       group_interval: 5m
